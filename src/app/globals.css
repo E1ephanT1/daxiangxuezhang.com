@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', 'PingFang SC', 'Noto Sans SC', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* B站播放器响应式 */
+.bilibili-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+}
+.bilibili-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 文章正文排版 */
+.article-content h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.article-content p {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.article-content ul, .article-content ol {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+.article-content pre {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+.article-content blockquote {
+  border-left: 3px solid #3b82f6;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #6b7280;
+}
+.article-content a {
+  color: #3b82f6;
+}
+.article-content img {
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
